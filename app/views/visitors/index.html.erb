@@ -8,15 +8,11 @@
                     <h1>Clean Blog</h1>
                     <hr class="small">
                     <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
-                    <span class="input-group-btn">
-                      <%= button_tag(type: 'submit', description: nil, class: "btn btn-secondary") do %>
-                       Search <span class="glyphicon glyphicon-search"></span>
-                     <% end %>
-                   </span>
                    <div>
                     <%= form_tag() do %>
                      <%= text_field_tag :search, params[:search], :placeholder => "Job title, Common keywords", class: "form-control searchform" %>
                      <%= select_tag "Select Location", options_for_select(["San Francisco", "Everywhere Else"])%>
+                     <%= button_tag(type: 'submit', description: nil, class: "btn btn-secondary") %>
                     <% end %>
                    </div>
                    <div>
