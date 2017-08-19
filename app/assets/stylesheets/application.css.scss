@@ -13,3 +13,46 @@
  *= require_tree .
  *= require_self
  */
+
+.user {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.profile p {
+  margin: 5px;
+}
+
+.experience {
+  margin-top: 50px;
+}
+
+li {
+  font-size: .75em;
+}
+
+.picz {
+  display: flex;
+  justify-content: left;
+}
+
+.picz img {
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
+}
+
+.education {
+  display: flex;
+  justify-content: left;
+}
+
+.education img {
+  height: 100px;
+  width: 170px;
+  margin: 0 10px;
+}
+
+.education p {
+  font-size: .75em;
+}
