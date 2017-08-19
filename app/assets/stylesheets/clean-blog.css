@@ -397,3 +397,7 @@ body {
 select, input {
   color: black;
 }
+
+.homepage-text, .homepage-tagline {
+  text-align: center;
+}

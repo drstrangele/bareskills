@@ -5,11 +5,8 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
-                    <h1>Clean Blog</h1>
-                    <hr class="small">
-                    <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
                    <div>
-                    <%= form_tag() do %>
+                    <%= form_tag :class => "form-inline" do %>
                      <%= text_field_tag :search, params[:search], :placeholder => "Job title, Common keywords", class: "form-control searchform" %>
                      <%= select_tag "select-location", options_for_select(["Select Location", "San Francisco", "Everywhere Else"])%>
                      <%= submit_tag "Submit"%>
@@ -25,58 +22,43 @@
 <!-- Main Content -->
 <div class="container">
     <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="post-preview">
-                <%= link_to page_path('post') do %>
-                    <h2 class="post-title">
-                        Man must explore, and this is exploration at its greatest
-                    </h2>
-                    <h3 class="post-subtitle">
-                        Problems look mighty small from 150 miles up
-                    </h3>
-                <% end %>
-                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
-            </div>
-            <hr>
-            <div class="post-preview">
-                <%= link_to page_path('post') do %>
-                    <h2 class="post-title">
-                        I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-                    </h2>
-                <% end %>
-                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 18, 2014</p>
-            </div>
-            <hr>
-            <div class="post-preview">
-                <%= link_to page_path('post') do %>
-                    <h2 class="post-title">
-                        Science has not yet mastered prophecy
-                    </h2>
-                    <h3 class="post-subtitle">
-                        We predict too much for the next year and yet far too little for the next ten.
-                    </h3>
-                <% end %>
-                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</p>
-            </div>
-            <hr>
-            <div class="post-preview">
-                <%= link_to page_path('post') do %>
-                    <h2 class="post-title">
-                        Failure is not an option
-                    </h2>
-                    <h3 class="post-subtitle">
-                        Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-                    </h3>
-                <% end %>
-                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July 8, 2014</p>
-            </div>
-            <hr>
-            <!-- Pager -->
-            <ul class="pager">
-                <li class="next">
-                    <a href="#">Older Posts &rarr;</a>
-                </li>
-            </ul>
-        </div>
+        <h3 class="homepage-text">Why BareSkills?</h3>
+        <h3 class="homepage-tagline">Bare skills matches your skills to the job you're looking for.</h3>
     </div>
+  </div>
+  <div class="container">
+    <div class="row flex-row flex-nowrap">
+      <div class="col-3" style="width: 40rem;">
+        <img class="card-img-top" src="http://www.sftravel.com/sites/sftraveldev.prod.acquia-sites.com/files/field/image/site-photo.jpg" alt="San Francisco">
+        <div class="card-block">
+          <h4 class="card-title">San Francisco</h4>
+          <p class="card-text">See a listing of jobs in San Francisco.</p>
+          <a href="#" class="btn btn-primary">View Jobs</a>
+        </div>
+      <div class="col-3" style="width: 40rem;">
+        <img class="card-img-top" src="https://chicagodowntowntheloop.place.hyatt.com/content/dam/PropertyWebsites/place/chizp/Media/All/Hyatt-Place-Chicago-Downtown-The-Loop-P014-Skyline-North-Lakeshore.masthead-feature-panel-medium.masthead-feature-panel-medium.jpg" alt="Chicago">
+        <div class="card-block">
+          <h4 class="card-title">Chicago</h4>
+          <p class="card-text">See a listing of jobs in Chicago.</p>
+          <a href="#" class="btn btn-primary">View Jobs</a>
+        </div>
+      </div>
+      <div class="col-3" style="width: 40rem;">
+        <img class="card-img-top" src="https://media-cdn.tripadvisor.com/media/photo-s/05/a4/f1/84/los-angeles.jpg" alt="Los Angeles">
+        <div class="card-block">
+          <h4 class="card-title">CLos Angeles</h4>
+          <p class="card-text">See a listing of jobs in CLos Angeles.</p>
+          <a href="#" class="btn btn-primary">View Jobs</a>
+        </div>
+      </div>
+      <div class="col-3" style="width: 40rem;">
+        <img class="card-img-top" src="https://www.gentlegiant.com/wp-content/uploads/2015/06/New-York.jpg" alt="New York">
+        <div class="card-block">
+          <h4 class="card-title">New York</h4>
+          <p class="card-text">See a listing of jobs in New York.</p>
+          <a href="#" class="btn btn-primary">View Jobs</a>
+        </div>
+      </div>
+      </div>
+  </div>
 </div>
