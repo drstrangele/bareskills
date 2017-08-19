@@ -398,6 +398,10 @@ select, input {
   color: black;
 }
 
-.homepage-text, .homepage-tagline {
+.homepage-text, .homepage-tagline, .homepage-departments {
   text-align: center;
+}
+.card-img-top {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
