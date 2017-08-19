@@ -11,8 +11,8 @@
                    <div>
                     <%= form_tag() do %>
                      <%= text_field_tag :search, params[:search], :placeholder => "Job title, Common keywords", class: "form-control searchform" %>
-                     <%= select_tag "Select Location", options_for_select(["San Francisco", "Everywhere Else"])%>
-                     <%= button_tag(type: 'submit', description: nil, class: "btn btn-secondary") %>
+                     <%= select_tag "select-location", options_for_select(["Select Location", "San Francisco", "Everywhere Else"])%>
+                     <%= submit_tag "Submit"%>
                     <% end %>
                    </div>
                    <div>
