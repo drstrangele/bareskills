@@ -1,3 +1,57 @@
-<h3>User</h3>
-<p>Name: <%= @user.name if @user.name %></p>
-<p>Email: <%= @user.email if @user.email %></p>
+<div class="user">
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+      <%= image_tag "profile-pic.jpg", class:"img-circle", :size => "200x300" %>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-8 profile">
+      <h2> <%= @user.name if @user.name %></h2>
+      <p> Ambitious UX/UI Designer</p>
+      <p> Portfolio: <a href="#">www.imabosslady.com</a></p>
+      <p> Github: <a href="#">www.github.com/imabosslady</a></p>
+    </div>
+  </div>
+  <div class="row experience">
+    <div class="col-xs-6 col-md-5 profile">
+      <h3>Experiences</h3>
+      <div class="work">
+        <h4>Boss Lady</h4>
+        <p>Creative Design Studios</p>
+        <ul>
+          <li>Review blueprints and schematics to determine construction, renovation, and remodeling project scopes of work.</li>
+          <li>Mentor junior team members and provide guidance on proper construction techniques and safety requirements.</li>
+          <li>Inspect completed work to ensure conformance with construction specifications and uphold quality standards.</li>
+        </ul>
+      </div>
+      <div class="work">
+        <h4>Amatuer Boss Lasy</h4>
+        <p>Designy Design Studios</p>
+        <ul>
+          <li>Review blueprints and schematics to determine construction, renovation, and remodeling project scopes of work.</li>
+          <li>Mentor junior team members and provide guidance on proper construction techniques and safety requirements.</li>
+          <li>Inspect completed work to ensure conformance with construction specifications and uphold quality standards.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-7 profile">
+      <h3>Hard Skills</h3>
+        <div class="picz">
+          <%= image_tag "html.png" %>
+          <%= image_tag "ai.png" %>
+          <%= image_tag "in.png" %>
+          <%= image_tag "sketch.png" %>
+          <%= image_tag "principle.png" %>
+        </div>
+      <h3>Soft Skills</h3>
+        <div class="picz">
+          <%= image_tag "teamwork.png" %>
+          <%= image_tag "creative.png" %>
+          <%= image_tag "lead.png" %>
+        </div>
+      <h3>Education</h3>
+        <div class="education">
+          <%= image_tag "ga.png"%>
+          <p>UX/UI school for kids that want to paint stuff good</p>
+        </div>
+    </div>
+  </div>
+</div>
